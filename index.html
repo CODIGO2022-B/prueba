@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div id="audio-container">
+        <img id="fondo" src="a.jpg" alt="Fondo con efecto parallax">
+        <div id="play-button" onclick="playAudio()"></div>
+        <audio id="mi-audio" src="tu-archivo-de-audio.mp3"></audio>
+    </div>
+
+    <div id="audio-icon" onclick="toggleAudio()">
+        <!-- Icono cuando el audio está apagado -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#808080">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M12 2a9 9 0 0 0 0 18 1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v2a7 7 0 0 1 0-14 1 1 0 0 0-1-1 1 1 0 0 0-1 1v14a1 1 0 0 0 2 0v-4a1 1 0 0 0-2 0v2a7 7 0 0 1 0-14 9 9 0 0 0 0 18zm1-14h2v4h-2z"/>
+        </svg>
+        <!-- Icono cuando el audio está encendido -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#00FF00" style="display: none;">
+            <path d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 9v6h4l5 5V4L7 9H3zm14-2a9 9 0 0 0 0 18 1 1 0 0 0 1-1v-4a1 1 0 0 0-2 0v2a7 7 0 0 1 0-14 1 1 0 0 0-1-1 1 1 0 0 0-1 1v14a1 1 0 0 0 2 0v-4a1 1 0 0 0-2 0v2a7 7 0 0 1 0-14 9 9 0 0 0 0 18zm1-14h2v4h-2z"/>
+        </svg>
+    </div>
+
+    <button id="inicio" onclick="irAPagina()">Ir a Otra Página</button>
+    <img id="fondo" src="a.jpg" alt="Fondo con efecto parallax">
+</body>
+</html>
