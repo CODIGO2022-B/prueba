@@ -8,10 +8,15 @@
     <script src="main.js" defer></script>
 </head>
 <body>
-    <div id="audio-container">
+<div id="audio-container">
         <img id="fondo" src="a.jpg" alt="Fondo con efecto parallax">
-        <div id="play-button" onclick="playAudio()"></div>
-        <audio id="mi-audio" src="tu-archivo-de-audio.mp3"></audio>
+        <div id="play-button" onclick="playAudio()">
+            <!-- Icono de play en el medio del fondo -->
+            <svg id="play-icon" xmlns="https://www.svgrepo.com/show/512667/play-1000.svg" viewBox="0 0 24 24" width="100" height="100" fill="#ffffff">
+                <path d="M8 5v14l11-7z"/>
+            </svg>
+        </div>
+        <audio id="mi-audio" src="a.mp3"></audio>
     </div>
 
     <div id="audio-icon" onclick="toggleAudio()">
